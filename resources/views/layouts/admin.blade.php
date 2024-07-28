@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="{{ asset('admin/icon/style.css') }}">
         <link rel="shortcut icon" href="{{ asset('admin/images/favicon.ico') }}">
         <link rel="apple-touch-icon-precomposed" href="{{ asset('admin/images/favicon.ico') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('admin/admin/css/custom.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('admin/css/custom.css') }}">
 
 
         @stack('styles')
@@ -79,12 +79,12 @@
                                         </a>
                                         <ul class="sub-menu">
                                             <li class="sub-menu-item">
-                                                <a href="add-brand.html" class="">
+                                                <a href="{{ route('admin.brands.create') }}" class="">
                                                     <div class="text">New Brand</div>
                                                 </a>
                                             </li>
                                             <li class="sub-menu-item">
-                                                <a href="brands.html" class="">
+                                                <a href="{{ route('admin.brands') }}" class="">
                                                     <div class="text">Brands</div>
                                                 </a>
                                             </li>
